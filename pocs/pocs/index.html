@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--en: 한글로 자동 변환되지 않음-->
+<html lang = "en">
+    <head>
+        <!--HTML파일을 웹브라우저에서 표시될 수 있도록 변환-->
+        <meta charset="UTF-8">
+        <!--가장 최신 표준 모드를 선택하는 문서모드-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--width=device-width:브라우저 너비를 장치 너비에 맞추어 표시함-->
+        <!--initial-scale=1.0:100%로 화면 비율 조정-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>pocs homepage</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="body">
+        <!--배경화면 낮 or 밤 버전-->
+        <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
+        <section class="row">
+            <div class="col-lg-2 menu">
+                <h3>메뉴</h3>
+                <div class="row">
+                    <!--#:페이지 이동 막음-->
+                    <a href="#" class="user-menu">유저목록 조회</a>
+                </div>
+                <div class = "row">
+                    <a href="#" class="notice-menu">공지사항</a>
+                </div>
+            </div>
+
+            <!--col-lg-@ : 너비 설정
+            <div class ="col-lg-10 user-info">
+                <div class="row" id="user-head">
+                    <h3>유저 목록</h3>
+                </div>
+                <div class="row">
+                    <table class="user-item">
+                    </table>
+                </div>
+            </div>
+        -->
+            <!--내가 만든 부분-->
+            <div class ="col-lg-10 user-info">
+                <!--<div class="row" id="userinfo">-->
+                    <h3>유저 목록 조회</h3>
+                    <table id="useritem">
+                        <tr>
+                            <th>번호</th>
+                            <th>이름</th>
+                            <th>이메일</th>
+                            <th>학번</th>
+                            <th>타입</th>
+                            <th>회사</th>
+                            <th>기수</th>
+                            <th>생성일</th>
+                        </tr>
+                    </table>
+                
+            </div>
+
+            <div class="col-lg-10 notice hidden">
+                <div class="row" id="notice-head">
+                    <h3>공지사항</h3>
+                    <div><a href="#" class="notice-add">공지사항 추가</a></div>
+                </div>
+                <div class="row">
+                    <table class="notice-item">
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-lg-10 notice-detailed hidden">
+                <div class="row notice-detailed-items">
+                    <div>제목</div>
+                    <div>내용</div>
+                    <div>게시날짜</div>
+                    <div>사용자ID</div>
+                    <div>사용자이름</div>
+                </div>
+            </div>
+
+            <div class="col-lg-10 hidden notice-add-form">
+                <div class="row">
+                    <div>
+                        <input type="text" placeholder="제목" id="title-input"/>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="내용" id="content-input"/>
+                    </div>
+                    <div>
+                        <button onclick="noticeAdd()">추가</button>
+                    </div>
+                    <!--글을 쓸 권한-->
+                    <div class="check-authority">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+.button{
+  padding: 4px 12px;  
+  font-size: 15px;
+  background-color : gainsboro;
+  color : rgb(18, 18, 16);
+}
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+  }
+  th {
+    background: #42444e;
+    color: #fff;
+    text-align: left;
+  }
+  td {
+    border-right: 1px solid #c6c9cc;
+    border-bottom: 1px solid #c6c9cc;
+  }
+#user-head{
+    margin-bottom: 50px;
+}
+.hidden{
+    display : none;
+}
+
+.user-info, .notice, .notice-detailed, .notice-add-form {
+    max-width: 70%;
+}
+
+.notice-add{
+    display:flex;
+    justify-content: flex-end;
+}
+.menu{
+    height : 500px;
+    margin-right : 15px;
+    border-right : 1px solid black;
+}
