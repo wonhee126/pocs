@@ -1,0 +1,9 @@
+          //오름차순
+          function compNumber(a, b) {
+          return a - b;
+          }
+
+          //내림차순
+          function compNumberReverse(a, b) {
+          return b - a;
+          }
